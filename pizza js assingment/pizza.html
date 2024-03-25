@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1> P I Z Z A ~</h1>
+            <p id="student-info"></p>
+            <form id="pizza-form">
+                <div class="form-group">
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="crust">Crust:</label>
+                    <select id="crust" name="crust">
+                        <option value="thin">Thin</option>
+                        <option value="thick">Thick</option>
+                        <option value="stuffed">Stuffed</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="toppings">Toppings:</label><br>
+                    <div class="topping-checkbox">
+                        <input type="checkbox" id="pepperoni" name="topping" value="Pepperoni">
+                        <label for="pepperoni">
+                            <img src="./pepperoni.png" alt="Pepperoni" class="topping-image">
+                        </label>
+                        <input type="checkbox" id="mushrooms" name="topping" value="Mushrooms">
+                        <label for="mushrooms">
+                            <img src="mushroom.webp" alt="Mushrooms" class="topping-image">
+                        </label>
+                        <input type="checkbox" id="peppers" name="topping" value="Peppers">
+                        <label for="peppers">
+                            <img src="./pepper.jpeg" alt="Peppers" class="topping-image">
+                        </label>
+                        <input type="checkbox" id="sausage" name="topping" value="Sausage">
+                        <label for="sausage">
+                            <img src="sausage.jpeg" alt="Sausage" class="topping-image">
+                        </label>
+                        <input type="checkbox" id="olives" name="topping" value="Olives">
+                        <label for="olives">
+                            <img src="olv.jpeg" alt="Olives" class="topping-image">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="instructions">Special Instructions:</label><br>
+                    <textarea id="instructions" name="instructions" rows="4" cols="30" placeholder="Any special instructions..."></textarea>
+                </div>
+                <button type="button" id="order-btn">Order</button>
+            </form>
+            <div id="order-result"></div>
+        </div>
+        <div class="image-container">
+            <img src="./pizza img.png" alt="Pizza" class="pizza-image">
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
